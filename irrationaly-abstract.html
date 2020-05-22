@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" />
+        <link rel="stylesheet" href="css/irrationaly-abstract.css"/>
+        <title>Xeuhma | Irrationaly abstract</title>
+        <link rel="shortcut icon" type="image/png" href="logo-xeuh.png">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logo-xeuhma" src="logo-xeuh.png" />
+                    </a>  
+                </div> 
+                <ul class="nav">
+                    <li class="nav-title">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-title">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-title">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>  
+            </header>
+            <section class="serie">
+                <div class="serie-images">
+                    <div class="wrapper">
+                        <div class="scroll-container">
+                            <div class="scroll">
+                                <div class="item">
+                                    <img class="image" src="irrationaly-abstract/1-beirut.jpg">
+                                    <div class="caption">
+                                        <h2 class="caption-text"><strong class="caption-title">Beirut</strong><br></h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="irrationaly-abstract/2-the-awakening.jpg">
+                                    <div class="caption">
+                                        <h2 class="caption-text"><strong class="caption-title">The Awakening</strong><br></h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="irrationaly-abstract/3-don't-fuck-with-my-heart.jpg">
+                                    <div class="caption">
+                                        <h2 class="caption-text"><strong class="caption-title">Don't fuck with my heart</strong><br></h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="irrationaly-abstract/4-lost-in-materialization.jpg">
+                                    <div class="caption">
+                                        <h2 class="caption-text"><strong class="caption-title">Lost in materialization</strong><br></h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="irrationaly-abstract/5-pretty-little-thing.jpg">
+                                    <div class="caption">
+                                        <h2 class="caption-text"><strong class="caption-title">Pretty little thing</strong><br></h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="irrationaly-abstract/6-lin(n)kuified.jpg">
+                                    <div class="caption">
+                                        <h2 class="caption-text"><strong class="caption-title">Lin(n)kuified</strong><br></h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="irrationaly-abstract/7-ice-age.jpg">
+                                    <div class="caption">
+                                        <h2 class="caption-text"><strong class="caption-title">Ice age</strong><br></h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="irrationaly-abstract/8-intangible-waves.jpg">
+                                    <div class="caption">
+                                        <h2 class="caption-text"><strong class="caption-title">Intangible waves</strong><br></h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="irrationaly-abstract/9-saturday-hangover.jpg">
+                                    <div class="caption">
+                                        <h2 class="caption-text"><strong class="caption-title">Saturday hangover</strong><br></h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="irrationaly-abstract/10-plastically-glitched.jpg">
+                                    <div class="caption">
+                                        <h2 class="caption-text"><strong class="caption-title">Plastically glitched</strong><br></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="left">Previous</div>
+                        <div class="right">Next</div>
+                    </div>
+                </div>
+                <div class="serie-description">
+                    <h1 class="serie-title">Irrationaly abstract</h1>
+                    <p class="serie-text">The construction of a life is a succession of physical, emotional, mental experiences - subtle or violent. Each one builds its own story in a sequence of images filled with very personal shapes and colours, which are nevertheless ineffable.
+                        While it is possible to identify an emotion and explain what is going on inside us, sadness, anger or joy will never resonate in the same way from one person to another.<br>First of all, because sensitive experiences and experiences vary from one individual to another. Secondly, because the expression of these experiences varies according to each person's experience.<br>
+                        The work of the artist is to restore an emotion or an event, while preserving its meaning and its intensity, to give shape to the unspeakable. 
+                        By his choice, his point of view, his angle of view - the frame when talking about photography - the artist expresses human life in an abstraction of intense irrationality in a way that is either chaotic or orderly, where everything can be truth and/or lie, dream and/or reality. It's up to each one to choose and decide!</p>     
+                </div>  
+            </section>
+            <footer class="footer">
+                <div class="footer-icon">
+                    <a href="https://www.instagram.com/xeuhma/?hl=en" target="_blank"><img src="instagram.svg"/></a>
+                </div>
+                <div class="footer-text">
+                    <p class="rights">© Xeuhma, all rights reserved.</p>
+                </div>
+            </footer>       
+        </div>
+        <script>
+            const container = document.querySelector('.scroll');
+const left = document.querySelector('.left');
+const right = document.querySelector('.right');
+
+left.addEventListener('click', function() {
+  container.scrollBy({
+    left: -container.offsetWidth,
+    behavior: 'smooth',
+    // behavior: 'instant'
+  })
+})
+
+right.addEventListener('click', function() {
+  container.scrollBy({
+    left: container.offsetWidth,
+    behavior: 'smooth',
+    // behavior: 'instant'
+  })
+})
+        </script>
+    </body>
