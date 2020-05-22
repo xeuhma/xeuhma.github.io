@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" />
+        <link rel="stylesheet" href="css/tearsheet.css"/>
+        <title>Xeuhma | Tears sheet</title>
+        <link rel="shortcut icon" type="image/png" href="logo-xeuh.png">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logo-xeuhma" src="logo-xeuh.png" />
+                    </a>  
+                </div> 
+                <ul class="nav">
+                    <li class="nav-title">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-title">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-title">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>  
+            </header>
+            <section class="serie">
+                <div class="serie-images">
+                    <div class="wrapper">
+                        <div class="scroll-container">
+                            <div class="scroll">
+                                <div class="item">
+                                    <img class="image" src="tearsheet/lexpress.jpg">
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="tearsheet/le-point.jpg">
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="tearsheet/france-info-tv-1.jpg">
+                                </div>
+                                <div class="item">
+                                    <img class="image" src="tearsheet/france-info-tv-2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="left">Previous</div>
+                        <div class="right">Next</div>
+                    </div>
+                </div>
+                <div class="serie-description">
+                    <h1 class="serie-title">Tearsheet</h1>
+                </div>  
+            </section>
+            <footer class="footer">
+                <div class="footer-icon">
+                    <a href="https://www.instagram.com/xeuhma/?hl=en" target="_blank"><img src="instagram.svg"/></a>
+                </div>
+                <div class="footer-text">
+                    <p class="rights">© Xeuhma, all rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+            const container = document.querySelector('.scroll');
+const left = document.querySelector('.left');
+const right = document.querySelector('.right');
+
+left.addEventListener('click', function() {
+  container.scrollBy({
+    left: -container.offsetWidth,
+    behavior: 'smooth',
+    // behavior: 'instant'
+  })
+})
+
+right.addEventListener('click', function() {
+  container.scrollBy({
+    left: container.offsetWidth,
+    behavior: 'smooth',
+    // behavior: 'instant'
+  })
+})
+        </script>
+    </body>
